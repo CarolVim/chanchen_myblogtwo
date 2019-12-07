@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.myblog.dao.ArticleDao">
+    <select id="findALL" parameterType="Dw" resultType="Dw">
+        select * from dw
+    </select>
+    <select id="findOne" parameterType="Dw" resultType="Dw">
+        select * from dw where shortId=#{shortId}
+    </select>
+    <insert id="AddArticle" parameterType="Dw">
+        insert into dw(title,content,addtime) values(#{title},#{content},#{addtime})
+    </insert>
+    <delete id="DeleteArticle" parameterType="Dw">
+        delete from dw where shortId=#{shortId}
+    </delete>
+</mapper>

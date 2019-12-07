@@ -1,0 +1,1284 @@
+@font-face {
+  font-family: "Zawgyi-One";
+  src: local("Zawgyi-One"), url("/assets/font/zawgyi.woff") format("woff"), url("/assets/font/zawgyi.ttf") format("truetype");
+}
+/*!
+ * PLEASE DON'T INCLUDE THE WHOLE BOOTSTRAP HERE
+ *
+ * only include a minimal set of css here to style:
+ * - .print-panel-section - which means:
+ *      - the print preview header
+ *      - some preview styles for .print-page
+ *
+ * The content of .print-page has to provide it's own css (as it is for example the invoices)
+ */
+/* line 9, ../../../../application/templates/default/sass/sass_src/bootstrap/_scaffolding.scss */
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, "Zawgyi-One";
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #fdfdfd;
+}
+
+/* line 22, ../../../../application/templates/default/sass/sass_src/bootstrap/_scaffolding.scss */
+a {
+  color: #4e71c0;
+  text-decoration: none;
+}
+
+/* line 26, ../../../../application/templates/default/sass/sass_src/bootstrap/_scaffolding.scss */
+a:hover,
+a:focus {
+  color: #334f8f;
+  text-decoration: underline;
+}
+
+/* line 37, ../../../../application/templates/default/sass/sass_src/bootstrap/_scaffolding.scss */
+.img-rounded {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 42, ../../../../application/templates/default/sass/sass_src/bootstrap/_scaffolding.scss */
+.img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 51, ../../../../application/templates/default/sass/sass_src/bootstrap/_scaffolding.scss */
+.img-circle {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+/* line 10, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn, .ui-btn-primary-blocked, .ui-btn-primary, .ui-btn-secondary, .js-resync-seller-shop {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f2f2f2;
+  background-image: -moz-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: -o-linear-gradient(top, #f2f2f2, #f2f2f2);
+  background-image: linear-gradient(to bottom, #f2f2f2, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2F2F2', endColorstr='#FFF2F2F2', GradientType=0);
+  border-color: #f2f2f2 #f2f2f2 #cccccc;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f2f2f2;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border: 1px solid #CCCCCC;
+  *border: 0;
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn:hover, .ui-btn-primary-blocked:hover, .ui-btn-primary:hover, .ui-btn-secondary:hover, .js-resync-seller-shop:hover, .btn:focus, .ui-btn-primary-blocked:focus, .ui-btn-primary:focus, .ui-btn-secondary:focus, .js-resync-seller-shop:focus, .btn:active, .ui-btn-primary-blocked:active, .ui-btn-primary:active, .ui-btn-secondary:active, .js-resync-seller-shop:active, .btn.active, .active.ui-btn-primary-blocked, .active.ui-btn-primary, .active.ui-btn-secondary, .active.js-resync-seller-shop, .btn.disabled, .disabled.ui-btn-primary-blocked, .disabled.ui-btn-primary, .disabled.ui-btn-secondary, .disabled.js-resync-seller-shop, .btn[disabled], [disabled].ui-btn-primary-blocked, [disabled].ui-btn-primary, [disabled].ui-btn-secondary, [disabled].js-resync-seller-shop {
+  color: #333;
+  background-color: #f2f2f2;
+  *background-color: #e5e5e5;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn:active, .ui-btn-primary-blocked:active, .ui-btn-primary:active, .ui-btn-secondary:active, .js-resync-seller-shop:active, .btn.active, .active.ui-btn-primary-blocked, .active.ui-btn-primary, .active.ui-btn-secondary, .active.js-resync-seller-shop {
+  background-color: #d9d9d9 \9;
+}
+/* line 61, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn:first-child, .ui-btn-primary-blocked:first-child, .ui-btn-primary:first-child, .ui-btn-secondary:first-child, .js-resync-seller-shop:first-child {
+  *margin-left: 0;
+}
+/* line 29, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn:hover, .ui-btn-primary-blocked:hover, .ui-btn-primary:hover, .ui-btn-secondary:hover, .js-resync-seller-shop:hover, .btn:focus, .ui-btn-primary-blocked:focus, .ui-btn-primary:focus, .ui-btn-secondary:focus, .js-resync-seller-shop:focus {
+  color: #333;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+/* line 41, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn:focus, .ui-btn-primary-blocked:focus, .ui-btn-primary:focus, .ui-btn-secondary:focus, .js-resync-seller-shop:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 46, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn.active, .active.ui-btn-primary-blocked, .active.ui-btn-primary, .active.ui-btn-secondary, .active.js-resync-seller-shop, .btn:active, .ui-btn-primary-blocked:active, .ui-btn-primary:active, .ui-btn-secondary:active, .js-resync-seller-shop:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+/* line 54, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn.disabled, .disabled.ui-btn-primary-blocked, .disabled.ui-btn-primary, .disabled.ui-btn-secondary, .disabled.js-resync-seller-shop, .btn[disabled], [disabled].ui-btn-primary-blocked, [disabled].ui-btn-primary, [disabled].ui-btn-secondary, [disabled].js-resync-seller-shop {
+  cursor: default;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 70, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-large {
+  padding: 11px 19px;
+  font-size: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 75, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 4px;
+}
+
+/* line 81, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-small {
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 86, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+
+/* line 90, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+  margin-top: -1px;
+}
+
+/* line 96, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-mini {
+  padding: 0px 6px;
+  font-size: 11px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+
+/* line 106, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-block, .ui-btn-primary-blocked {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 115, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-block + .btn-block, .ui-btn-primary-blocked + .btn-block, .btn-block + .ui-btn-primary-blocked, .ui-btn-primary-blocked + .ui-btn-primary-blocked {
+  margin-top: 5px;
+}
+
+/* line 123, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+input[type="submit"].btn-block, input[type="submit"].ui-btn-primary-blocked,
+input[type="reset"].btn-block,
+input[type="reset"].ui-btn-primary-blocked,
+input[type="button"].btn-block,
+input[type="button"].ui-btn-primary-blocked {
+  width: 100%;
+}
+
+/* line 134, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-primary.active, .active.ui-btn-primary-blocked, .active.ui-btn-primary, .active.js-resync-seller-shop,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 145, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-primary, .ui-btn-primary-blocked, .ui-btn-primary, .js-resync-seller-shop {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #4e71c0;
+  background-image: -moz-linear-gradient(top, #4e71c0, #4e71c0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4e71c0), to(#4e71c0));
+  background-image: -webkit-linear-gradient(top, #4e71c0, #4e71c0);
+  background-image: -o-linear-gradient(top, #4e71c0, #4e71c0);
+  background-image: linear-gradient(to bottom, #4e71c0, #4e71c0);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4E71C0', endColorstr='#FF4E71C0', GradientType=0);
+  border-color: #4e71c0 #4e71c0 #334f8f;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #4e71c0;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-primary:hover, .ui-btn-primary-blocked:hover, .ui-btn-primary:hover, .js-resync-seller-shop:hover, .btn-primary:focus, .ui-btn-primary-blocked:focus, .ui-btn-primary:focus, .js-resync-seller-shop:focus, .btn-primary:active, .ui-btn-primary-blocked:active, .ui-btn-primary:active, .js-resync-seller-shop:active, .btn-primary.active, .active.ui-btn-primary-blocked, .active.ui-btn-primary, .active.js-resync-seller-shop, .btn-primary.disabled, .disabled.ui-btn-primary-blocked, .disabled.ui-btn-primary, .disabled.js-resync-seller-shop, .btn-primary[disabled], [disabled].ui-btn-primary-blocked, [disabled].ui-btn-primary, [disabled].js-resync-seller-shop {
+  color: #fff;
+  background-color: #4e71c0;
+  *background-color: #4064b4;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-primary:active, .ui-btn-primary-blocked:active, .ui-btn-primary:active, .js-resync-seller-shop:active, .btn-primary.active, .active.ui-btn-primary-blocked, .active.ui-btn-primary, .active.js-resync-seller-shop {
+  background-color: #3959a2 \9;
+}
+
+/* line 149, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-warning {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFBB450', endColorstr='#FFF89406', GradientType=0);
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f89406;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+  color: #fff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-warning:active, .btn-warning.active {
+  background-color: #c67605 \9;
+}
+
+/* line 153, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-danger {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
+  color: #fff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-danger:active, .btn-danger.active {
+  background-color: #942a25 \9;
+}
+
+/* line 157, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-success {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #4e71c0;
+  background-image: -moz-linear-gradient(top, #4e71c0, #4e71c0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4e71c0), to(#4e71c0));
+  background-image: -webkit-linear-gradient(top, #4e71c0, #4e71c0);
+  background-image: -o-linear-gradient(top, #4e71c0, #4e71c0);
+  background-image: linear-gradient(to bottom, #4e71c0, #4e71c0);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4E71C0', endColorstr='#FF4E71C0', GradientType=0);
+  border-color: #4e71c0 #4e71c0 #334f8f;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #4e71c0;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+  color: #fff;
+  background-color: #4e71c0;
+  *background-color: #4064b4;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-success:active, .btn-success.active {
+  background-color: #3959a2 \9;
+}
+
+/* line 161, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-info {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
+  color: #fff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-info:active, .btn-info.active {
+  background-color: #24748c \9;
+}
+
+/* line 165, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-inverse {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444, #222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444), to(#222));
+  background-image: -webkit-linear-gradient(top, #444, #222);
+  background-image: -o-linear-gradient(top, #444, #222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF444444', endColorstr='#FF222222', GradientType=0);
+  border-color: #222 #222 black;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
+  color: #fff;
+  background-color: #222;
+  *background-color: #151515;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-inverse:active, .btn-inverse.active {
+  background-color: #090909 \9;
+}
+
+/* line 173, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+button.btn, button.ui-btn-primary-blocked, button.ui-btn-primary, button.ui-btn-secondary, button.js-resync-seller-shop,
+input[type="submit"].btn,
+input[type="submit"].ui-btn-primary-blocked,
+input[type="submit"].ui-btn-primary,
+input[type="submit"].ui-btn-secondary,
+input[type="submit"].js-resync-seller-shop {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+/* line 177, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+button.btn::-moz-focus-inner, button.ui-btn-primary-blocked::-moz-focus-inner, button.ui-btn-primary::-moz-focus-inner, button.ui-btn-secondary::-moz-focus-inner, button.js-resync-seller-shop::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner,
+input[type="submit"].ui-btn-primary-blocked::-moz-focus-inner,
+input[type="submit"].ui-btn-primary::-moz-focus-inner,
+input[type="submit"].ui-btn-secondary::-moz-focus-inner,
+input[type="submit"].js-resync-seller-shop::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* line 186, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+button.btn.btn-large, button.btn-large.ui-btn-primary-blocked, button.btn-large.ui-btn-primary, button.btn-large.ui-btn-secondary, button.btn-large.js-resync-seller-shop,
+input[type="submit"].btn.btn-large,
+input[type="submit"].btn-large.ui-btn-primary-blocked,
+input[type="submit"].btn-large.ui-btn-primary,
+input[type="submit"].btn-large.ui-btn-secondary,
+input[type="submit"].btn-large.js-resync-seller-shop {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+/* line 190, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+button.btn.btn-small, button.btn-small.ui-btn-primary-blocked, button.btn-small.ui-btn-primary, button.btn-small.ui-btn-secondary, button.btn-small.js-resync-seller-shop,
+input[type="submit"].btn.btn-small,
+input[type="submit"].btn-small.ui-btn-primary-blocked,
+input[type="submit"].btn-small.ui-btn-primary,
+input[type="submit"].btn-small.ui-btn-secondary,
+input[type="submit"].btn-small.js-resync-seller-shop {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+/* line 194, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+button.btn.btn-mini, button.btn-mini.ui-btn-primary-blocked, button.btn-mini.ui-btn-primary, button.btn-mini.ui-btn-secondary, button.btn-mini.js-resync-seller-shop,
+input[type="submit"].btn.btn-mini,
+input[type="submit"].btn-mini.ui-btn-primary-blocked,
+input[type="submit"].btn-mini.ui-btn-primary,
+input[type="submit"].btn-mini.ui-btn-secondary,
+input[type="submit"].btn-mini.js-resync-seller-shop {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+
+/* line 205, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 212, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #4e71c0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 218, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-link:hover,
+.btn-link:focus {
+  color: #334f8f;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+/* line 224, ../../../../application/templates/default/sass/sass_src/bootstrap/_buttons.scss */
+.btn-link[disabled]:hover,
+.btn-link[disabled]:focus {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 1, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn, .ui-btn-primary-blocked, .ui-btn-primary, .ui-btn-secondary, .js-resync-seller-shop {
+  color: #666666;
+}
+/* line 4, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn:focus, .ui-btn-primary-blocked:focus, .ui-btn-primary:focus, .ui-btn-secondary:focus, .js-resync-seller-shop:focus {
+  outline: none;
+}
+/* line 8, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn [class^="icon-"], .ui-btn-primary-blocked [class^="icon-"], .ui-btn-primary [class^="icon-"], .ui-btn-secondary [class^="icon-"], .js-resync-seller-shop [class^="icon-"], .btn [class*=" icon-"], .ui-btn-primary-blocked [class*=" icon-"], .ui-btn-primary [class*=" icon-"], .ui-btn-secondary [class*=" icon-"], .js-resync-seller-shop [class*=" icon-"] {
+  margin-top: 2px;
+}
+
+/* line 13, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-primary, .ui-btn-primary-blocked, .ui-btn-primary, .js-resync-seller-shop,
+.btn-warning,
+.btn-danger,
+.btn-success,
+.btn-info,
+.btn-inverse {
+  color: #fff;
+}
+
+/* line 22, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-link {
+  color: #4e71c0;
+}
+
+/* line 26, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-primary, .ui-btn-primary-blocked, .ui-btn-primary, .js-resync-seller-shop {
+  border-color: #4e71c0;
+  position: relative;
+}
+
+/* line 31, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.ui-btn-primary-blocked {
+  border-color: #4e71c0;
+}
+/* line 38, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.ui-btn-primary-blocked:focus {
+  outline: none;
+}
+
+/* line 43, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.ui-btn-primary {
+  border-color: #4e71c0;
+}
+
+/* line 54, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.js-resync-seller-shop {
+  border-color: #4e71c0;
+}
+
+/* line 61, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn.btn-centered, .btn-centered.ui-btn-primary-blocked, .btn-centered.ui-btn-primary, .btn-centered.ui-btn-secondary, .btn-centered.js-resync-seller-shop {
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 66, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+a.btn.btn-centered, a.btn-centered.ui-btn-primary-blocked, a.btn-centered.ui-btn-primary, a.btn-centered.ui-btn-secondary, a.btn-centered.js-resync-seller-shop {
+  display: inline-block;
+  vertical-align: baseline;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 70, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn.btn-margin-top, .btn-margin-top.ui-btn-primary-blocked, .btn-margin-top.ui-btn-primary, .btn-margin-top.ui-btn-secondary, .btn-margin-top.js-resync-seller-shop {
+  margin-top: 15px;
+}
+
+/* line 74, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-line {
+  overflow: hidden;
+}
+/* line 77, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-line .btn, .btn-line .ui-btn-primary-blocked, .btn-line .ui-btn-primary, .btn-line .ui-btn-secondary, .btn-line .js-resync-seller-shop {
+  float: right;
+  margin-left: 10px;
+}
+/* line 82, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-line .btn.btn-left, .btn-line .btn-left.ui-btn-primary-blocked, .btn-line .btn-left.ui-btn-primary, .btn-line .btn-left.ui-btn-secondary, .btn-line .btn-left.js-resync-seller-shop {
+  float: left;
+  margin-left: 0;
+}
+
+@media (max-width: 550px) {
+  /* line 90, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+  .btn-line .btn, .btn-line .ui-btn-primary-blocked, .btn-line .ui-btn-primary, .btn-line .ui-btn-secondary, .btn-line .js-resync-seller-shop {
+    float: none;
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  /* line 96, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+  .btn-line .btn.btn-left, .btn-line .btn-left.ui-btn-primary-blocked, .btn-line .btn-left.ui-btn-primary, .btn-line .btn-left.ui-btn-secondary, .btn-line .btn-left.js-resync-seller-shop {
+    float: none;
+    margin-left: 0;
+  }
+}
+/* line 103, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+a.btn.btn-left, a.btn-left.ui-btn-primary-blocked, a.btn-left.ui-btn-primary, a.btn-left.ui-btn-secondary, a.btn-left.js-resync-seller-shop {
+  float: left;
+}
+
+/* line 106, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-next {
+  float: right;
+}
+
+/* line 111, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.wrapper-switch-on-off {
+  position: relative;
+  width: 76px;
+}
+
+/* line 116, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: 18px;
+  width: 72px;
+  overflow: hidden;
+  border: 2px solid #e2e2e2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none;
+}
+/* line 128, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off .panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 107px;
+}
+/* line 136, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off .panel .iconset-btn {
+  float: left;
+  display: inline;
+  position: relative;
+  z-index: 10;
+}
+/* line 142, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off .panel .state {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 36px;
+  text-align: center;
+  line-height: 19px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+/* line 152, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off .panel .state.state-on {
+  margin-right: -1px;
+  background-color: #55AE3A;
+}
+/* line 157, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off .panel .state.state-off {
+  float: right;
+  margin-left: -1px;
+  background-color: #d9a0a6;
+}
+
+/* line 166, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off.on {
+  border-color: #55AE3A;
+}
+/* line 169, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off.on .panel .state.state-off {
+  background-color: #55AE3A;
+}
+
+/* line 175, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off.on.animating .panel .state.state-off {
+  background-color: #d9a0a6;
+}
+
+/* line 180, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off.off {
+  border-color: #d9a0a6;
+}
+/* line 183, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off.off .panel .state.state-on {
+  background-color: #d9a0a6;
+}
+
+/* line 189, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-switch-on-off.off.animating .panel .state.state-on {
+  background-color: #55AE3A;
+}
+
+/* line 195, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn.disabled, .disabled.ui-btn-primary-blocked, .disabled.ui-btn-primary, .disabled.ui-btn-secondary, .disabled.js-resync-seller-shop, .btn[disabled], [disabled].ui-btn-primary-blocked, [disabled].ui-btn-primary, [disabled].ui-btn-secondary, [disabled].js-resync-seller-shop {
+  pointer-events: none;
+}
+
+/* line 201, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.btn-back-page {
+  margin-top: 20px;
+  color: #FFFFFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #999999;
+  background-image: -moz-linear-gradient(top, #999999, #999999);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#999999), to(#999999));
+  background-image: -webkit-linear-gradient(top, #999999, #999999);
+  background-image: -o-linear-gradient(top, #999999, #999999);
+  background-image: linear-gradient(to bottom, #999999, #999999);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF999999', endColorstr='#FF999999', GradientType=0);
+  border-color: #999999 #999999 #737373;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #999999;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+/* line 515, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-back-page:hover, .btn-back-page:focus, .btn-back-page:active, .btn-back-page.active, .btn-back-page.disabled, .btn-back-page[disabled] {
+  color: #FFFFFF;
+  background-color: #999999;
+  *background-color: #8c8c8c;
+}
+/* line 522, ../../../../application/templates/default/sass/sass_src/bootstrap/_mixins.scss */
+.btn-back-page:active, .btn-back-page.active {
+  background-color: gray \9;
+}
+
+/* line 206, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.button-box {
+  overflow: hidden;
+}
+/* line 209, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.button-box .button-box-item {
+  display: block;
+  float: left;
+  margin-right: 4px;
+}
+
+/* line 216, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.back-to-top {
+  background: rgba(78, 113, 192, 0.8) url(/assets/img/back-to-top-arrow.svg) no-repeat center 50%;
+}
+
+/* line 220, ../../../../application/templates/default/sass/sass_src/ui/_buttons.scss */
+.no-touch .back-to-top:hover {
+  background-color: #4e71c0;
+}
+
+/* line 1, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+html {
+  font-size: 100%;
+}
+/* line 4, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+html.print-panel-iframe {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* line 9, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+html.print-panel-iframe #print-panel-content {
+  position: absolute;
+  bottom: 0;
+  top: 62px;
+  width: 100%;
+  max-width: 1170px;
+  min-width: 740px;
+  left: 50%;
+  margin-left: -585px;
+}
+/* line 21, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+html.print-panel-iframe #print-panel-content iframe {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+}
+/* line 36, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+html.print-panel-iframe #print-panel-content iframe.loading {
+  background: url(/assets/img/ajax-loader_small.gif) no-repeat 50% 50%;
+}
+/* line 41, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+html.print-panel-iframe #print-panel-content .print-links-box {
+  position: relative;
+  width: auto;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1220px) {
+  /* line 52, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  html.print-panel-iframe #print-panel-content {
+    left: 30px;
+    right: 30px;
+    margin-left: 0;
+    width: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 63, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  html.print-panel-iframe #print-panel-content {
+    left: 20px;
+    right: 20px;
+  }
+}
+/* line 70, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.page-element-hidden {
+  display: none !important;
+}
+
+/* line 74, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 742px;
+  max-width: 1170px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+/* line 84, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-panel-head {
+  margin-bottom: 20px;
+}
+/* line 87, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-panel-head .print-panel-head-actions {
+  overflow: hidden;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #e2e2e2;
+  margin-bottom: 35px;
+}
+/* line 94, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-panel-head .print-panel-head-actions .text-line {
+  padding: 15px 10px 0;
+}
+/* line 98, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-panel-head .print-panel-head-actions .print-panel-head-headline {
+  display: inline-block;
+  vertical-align: baseline;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding-top: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* line 105, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-panel-head .print-panel-head-actions a.btn, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-primary-blocked, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-primary, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-secondary, .print-panel-section .print-panel-head .print-panel-head-actions a.js-resync-seller-shop {
+  float: right;
+  margin-left: 10px;
+  display: block;
+  color: #505050;
+}
+/* line 112, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-panel-head .print-panel-head-actions a.btn.btn-primary, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-primary-blocked, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-primary, .print-panel-section .print-panel-head .print-panel-head-actions a.btn-primary.ui-btn-secondary, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-secondary.ui-btn-primary-blocked, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-secondary.ui-btn-primary, .print-panel-section .print-panel-head .print-panel-head-actions a.ui-btn-secondary.js-resync-seller-shop, .print-panel-section .print-panel-head .print-panel-head-actions a.js-resync-seller-shop {
+  color: #eee;
+}
+/* line 118, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page {
+  width: 700px;
+  min-height: 990px;
+  padding: 20px;
+  border: 1px solid #CCCCCC;
+  margin: 0 auto 30px;
+}
+/* line 127, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page.a4-landscape {
+  width: 950px;
+  min-height: 670px;
+}
+/* line 132, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page .a5-table-row {
+  clear: both;
+  display: table-row;
+}
+/* line 137, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page .a5-table-cell {
+  float: left;
+  margin-left: 10px;
+  display: table-cell;
+  width: 460px;
+  border: 1px solid #ccc;
+}
+/* line 145, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page .a6-table-row {
+  clear: both;
+  display: table-row;
+}
+/* line 150, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page .a6-table-cell {
+  float: left;
+  width: 320px;
+  min-height: 450px;
+  border: 1px solid #CCCCCC;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  display: table-cell;
+}
+/* line 160, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-page.print-links-box {
+  min-height: 0;
+}
+/* line 166, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-links-box ul.link-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+/* line 174, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-links-box ul.link-list a {
+  text-decoration: underline;
+}
+/* line 178, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+.print-panel-section .print-links-box ul.link-list li {
+  margin-bottom: 10px;
+}
+
+@media print {
+  /* line 186, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  body {
+    padding: 0;
+  }
+
+  /* line 190, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  .print-links-box {
+    display: none;
+  }
+
+  /* line 194, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  .print-panel-section {
+    min-width: none;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+  /* line 201, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  .print-panel-section .print-panel-head {
+    display: none;
+  }
+  /* line 205, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  .print-panel-section .print-page {
+    width: auto;
+    height: auto;
+    padding: 0;
+    border: none;
+    margin-bottom: 0px;
+    page-break-after: always;
+  }
+}
+@media (max-width: 767px) {
+  /* line 219, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 224, ../../../../application/templates/default/sass/sass_src/print-panel/_main.scss */
+  .print-panel-section {
+    padding: 0;
+  }
+}
+/* line 1, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list {
+  width: 700px;
+}
+/* line 4, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .logo, .print-pick-list .logo_content {
+  width: 700px;
+  height: 112px;
+}
+/* line 9, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .logo {
+  position: relative;
+  overflow: hidden;
+}
+/* line 13, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .logo .logo-bg {
+  width: 1364px;
+}
+/* line 17, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .logo .logo-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+/* line 24, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .logo .logo_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+/* line 30, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .logo .logo_content .headline {
+  padding-top: 85px;
+  font-weight: bold;
+  font-size: 13px;
+}
+/* line 38, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .footer {
+  margin-top: 40px;
+}
+/* line 42, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .footer-placeholder, .print-pick-list .small-footer-placeholder {
+  display: inline-block;
+  vertical-align: top;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 50%;
+}
+/* line 46, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .footer-placeholder .placeholder-inner, .print-pick-list .small-footer-placeholder .placeholder-inner {
+  border: 1px solid #CCCCCC;
+  min-height: 6em;
+}
+/* line 52, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .small-footer-placeholder {
+  margin-bottom: 10px;
+}
+/* line 55, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list .small-footer-placeholder .placeholder-inner {
+  padding: 5px 10px;
+  min-height: initial;
+}
+/* line 63, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list table {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+/* line 69, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list table th, .print-pick-list table td {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 1.5;
+  border: 1px solid #CCCCCC;
+}
+/* line 79, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list table th {
+  font-weight: bold;
+}
+/* line 83, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list table th.quantity, .print-pick-list table td.quantity {
+  text-align: right;
+}
+/* line 87, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list table td.image-cell {
+  padding-top: 10px;
+  width: 80px;
+  text-align: center;
+}
+/* line 92, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+.print-pick-list table td.image-cell img {
+  max-width: 80px;
+  max-height: 80px;
+  display: inline-block;
+}
+
+@media print {
+  /* line 102, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+  .print-pick-list {
+    width: auto;
+  }
+  /* line 105, ../../../../application/templates/default/sass/sass_src/print-panel/_pick-list.scss */
+  .print-pick-list .logo, .print-pick-list .logo_content {
+    width: auto;
+  }
+}
+/* line 1, ../../../../application/templates/default/sass/sass_src/print-panel/_consignment.scss */
+.print-consignment {
+  width: 700px;
+  padding-top: 20px;
+}
+/* line 5, ../../../../application/templates/default/sass/sass_src/print-panel/_consignment.scss */
+.print-consignment table {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+/* line 11, ../../../../application/templates/default/sass/sass_src/print-panel/_consignment.scss */
+.print-consignment table th, .print-consignment table td {
+  margin: 0;
+  padding: 5px 10px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 1.5;
+  border: 1px solid #CCCCCC;
+}
+/* line 21, ../../../../application/templates/default/sass/sass_src/print-panel/_consignment.scss */
+.print-consignment table th {
+  font-weight: bold;
+}
+
+@media print {
+  /* line 28, ../../../../application/templates/default/sass/sass_src/print-panel/_consignment.scss */
+  .print-consignment {
+    width: auto;
+  }
+}
+/* line 1, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation {
+  width: 100%;
+}
+/* line 4, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation th, .table-calculation td {
+  vertical-align: top;
+  padding: 0 0 20px 0;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 11, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation td {
+  padding: 0;
+}
+/* line 15, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation tr.detailed th, .table-calculation tr.detailed td {
+  padding: 0;
+}
+/* line 18, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation tr.detailed th table, .table-calculation tr.detailed td table {
+  width: 100%;
+  color: #888;
+  padding: 0 0 20px 0;
+}
+/* line 23, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation tr.detailed th table th, .table-calculation tr.detailed th table td, .table-calculation tr.detailed td table th, .table-calculation tr.detailed td table td {
+  vertical-align: top;
+}
+/* line 29, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation td {
+  text-align: right;
+}
+/* line 34, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .calculation-opening th, .table-calculation .calculation-opening td {
+  padding-bottom: 30px;
+}
+/* line 39, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .level-1 th {
+  font-size: 14px;
+  padding-left: 20px;
+}
+/* line 45, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .level-2 th {
+  font-size: 12px;
+}
+/* line 51, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .calculation-subrow th, .table-calculation .calculation-subrow td, .table-calculation .level-2 th, .table-calculation .level-2 td {
+  color: #999999;
+}
+/* line 54, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .calculation-subrow th, .table-calculation .level-2 th {
+  padding-left: 40px;
+}
+/* line 60, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .calculation-subtotal th, .table-calculation .calculation-subtotal td {
+  border-top: 1px solid #e2e2e2;
+  padding: 20px 0 40px 0;
+}
+/* line 66, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .th-section {
+  font-weight: bold;
+  padding-right: 48px;
+}
+/* line 71, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .td-label {
+  text-align: left;
+  position: relative;
+}
+/* line 77, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .subtotal a {
+  text-decoration: none;
+}
+/* line 81, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .subtotal span {
+  padding-top: 10px;
+  border-top: 1px solid #CCCCCC;
+  display: inline-block;
+  min-width: 200px;
+}
+/* line 87, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .subtotal span label {
+  display: inline-block;
+  cursor: default;
+  padding-right: 12px;
+  float: left;
+}
+/* line 95, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .subtotal td, .table-calculation .subtotal th {
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+/* line 101, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .maintotal .td-value {
+  font-weight: bold;
+}
+/* line 106, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .calculation-sum th, .table-calculation .calculation-sum td {
+  font-weight: bold;
+  border-top: 4px solid #e2e2e2;
+  padding-top: 15px;
+}
+/* line 114, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .total th, .table-calculation .total td {
+  font-weight: bold;
+}
+/* line 118, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .total .positive-number span,
+.table-calculation .total .negative-number span {
+  border-bottom: 4px double #CCCCCC;
+  padding-bottom: 3px;
+}
+/* line 125, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .line th {
+  border-top: 1px solid #e2e2e2;
+  padding: 20px 0 0;
+}
+/* line 130, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.table-calculation .line-wide th {
+  border-top: 4px solid #e2e2e2;
+  padding: 20px 0 0;
+}
+
+/* line 136, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-header {
+  width: auto;
+  height: 50px;
+  padding: 22px 40px 15px 40px;
+}
+
+/* line 142, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-header-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+  text-align: left;
+}
+/* line 149, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-header-box div {
+  padding: 2px;
+}
+/* line 153, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-header-box .header {
+  font-weight: bold;
+}
+
+/* line 158, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-pre-body {
+  width: auto;
+  height: 50px;
+  padding: 22px 40px 15px 40px;
+}
+
+/* line 164, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-header-box-venture {
+  width: 80%;
+}
+
+/* line 168, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.account-statement-header-box-document-print-date {
+  width: 20%;
+  text-align: right;
+  color: #888;
+}
+
+/* line 174, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.statement-with-header {
+  padding: 0 !important;
+}
+
+/* line 178, ../../../../application/templates/default/sass/sass_src/print-panel/_account_statement.scss */
+.statement-with-header-body {
+  padding: 40px;
+}

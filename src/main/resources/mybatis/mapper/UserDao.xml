@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.myblog.dao.UserDao">
+    <select id="CheckUser" parameterType="User" resultType="Integer">
+        select count(*) from user where userName=#{userName} and userPass=password(#{userPass})
+    </select>
+    <update id="ChangeLoginDetail">
+      update user set address=#{address},lastLoginTime=#{lastLoginTime} where userName=#{userName}
+    </update>
+    <select id="SelectUser" parameterType="User" resultType="User">
+        select * from user where userName=#{userName}
+    </select>
+    <update id="EditorUser" parameterType="User">
+      update user set picUrl=#{picUrl} where userId=#{userId}
+    </update>
+    <update id="EditorPasswd" parameterType="User">
+        update user set userPass=password(#{userPass}) where userId=#{userId}
+    </update>
+    <select id="SelectAll"  resultType="User">
+        select * from user
+    </select>
+    <select id="SelectById"  parameterType="User" resultType="User">
+        select * from user where userId=#{userId}
+    </select>
+
+</mapper>
