@@ -38,6 +38,7 @@ public class HTController {
 //           System.out.println("userName:"+userName);
            User userList= (User) userService.selectUser(user.getUserName());
             model.addAttribute("userList",userList);
+            System.out.println("test");
             return modelAndView;
     }
     @Autowired
