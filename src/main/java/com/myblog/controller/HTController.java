@@ -41,6 +41,7 @@ public class HTController {
             System.out.println("test");
         System.out.println("test");
         System.out.println("test");
+        System.out.println("test");
             return modelAndView;
     }
     @Autowired
